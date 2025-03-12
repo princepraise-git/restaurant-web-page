@@ -1,0 +1,72 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.jpg">
+</head>
+<body style="background-color: azure;">
+    <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+        <h2 class="text-center">Book A Table</h2>
+        <p class="text-center text-body-emphasis"><span class="book" style="font-size: 48px; font-family:'Lucida Sans'">Book Your </span> <span class="description-title" style="font-size: 48px; font-family:'Lucida Sans'; color: #ce1212;"> Stay With Us<br></span></p>
+      </div>
+    <div class="container">
+
+        <div class="row g-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 reservation-img"><img src="table.jpg" alt="table" style= "width: 370px; border-radius: 15px 50px;"></div>
+
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="date" name="date" class="form-control" id="date" placeholder="Date" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="time" class="form-control" name="time" id="time" placeholder="Time" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" required="">
+                </div>
+              </div>
+
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+              </div>
+
+              <div class="text-center mt-3">
+              <button id="myButton">book a table!</button>
+              <p id="message" style="display: none; color: green;"><b>plese hold your request is been processed</</p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script>
+        // Get references to the button and the message paragraph
+        const button = document.getElementById("myButton");
+        const message = document.getElementById("message");
+        
+        // Add a click event listener to the button
+        button.addEventListener("click", function () {
+            // Display the message
+            message.style.display = "block";
+        } ) ;
+        </script>
+</body>
+
+</html>
+
+</body>
+</html>

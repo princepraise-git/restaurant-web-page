@@ -1,0 +1,8 @@
+.gradient-background {
+    background: linear-gradient(300deg, #c0d3a3, #3e3958, #a04450);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+}
+.text-center{
+    padding-bottom: 20px;
+}
